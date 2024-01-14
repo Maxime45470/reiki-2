@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Application Electron</title>
+</head>
+<body>
+    <h1>Table de Données</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Entrée 1</th>
+                <th>Entrée 2</th>
+                <th>Entrée 3</th>
+                <th>Entrée 4</th>
+                <th>Entrée 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les lignes du tableau seront ajoutées ici -->
+        </tbody>
+    </table>
+
+    <h2>Ajouter des données</h2>
+    <form id="dataForm">
+        <input type="text" id="input1" placeholder="Entrée 1">
+        <input type="text" id="input2" placeholder="Entrée 2">
+        <input type="text" id="input3" placeholder="Entrée 3">
+        <input type="text" id="input4" placeholder="Entrée 4">
+        <input type="text" id="input5" placeholder="Entrée 5">
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="renderer.js"></script>
+</body>
 </html>

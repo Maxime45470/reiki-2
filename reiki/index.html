@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Application Electron</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid d-flex justify-content-center flex-column">
+  <div class=" d-flex justify-content-center">
+    <h1 class="text-center mt-2">Tableau des noeuds</h1>
+    <button class="btn btn-info m-3" id="goToAddPage">+</button>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+    <div class="col-11">
+    <table id="dataTable" class="table table-striped text-center">
+      <thead class=" sticky-top">
+        <tr>
+          <th>Id</th>
+          <th>Date de la séance</th>
+          <th>Nombre de noeuds à dissoudre</th>
+          <th>Nombre de noeuds que je peux défaire aujourd'hui</th>
+          <th>Corps où se situent le(s) noeud(s)</th>
+          <th>Enveloppe du corps X où se trouve le(s) noeud(s) de memoire</th>
+          <th>À quelle période de ma vie</th>
+          <th>Quel est le chacra le plus touché</th>
+          <th>Impact de ce noeud pour moi</th>
+          <th>Taux de perturbation si je dissous le noeud aujourd'hui</th>
+          <th>Rune pour dissoudre le noeud</th>
+          <th>Lettre de la Kabbale pour dissoudre le noeud</th>
+          <th>Elixir de Bach pour dissoudre le noeud</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Les lignes du tableau seront ajoutées ici -->
+      </tbody>
+    </table>
+    <!-- Votre tableau ici -->
+    <!-- Inclure renderer.js -->
+    <script src="comRenderer.js"></script>
+    <script src="renderer.js"></script>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

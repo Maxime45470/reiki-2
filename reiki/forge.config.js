@@ -1,24 +1,35 @@
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: 'img/reiki',
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        icon: './img/reiki.ico',
+      },
     },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
+      config: {
+        icon: './img/reiki.ico',
+      },
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        icon: './img/reiki.ico',
+      }
     },
+    
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        icon: './img/reiki.ico',
+      } 
     },
   ],
   plugins: [

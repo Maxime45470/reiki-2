@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    background-image: url("./img/reiki.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive !important;
+}
+th {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 16px;
+}
+td {
+    font-family: 'Dancing Script', cursive !important;
+  
+}
+p {
+    font-family: 'Dancing Script', cursive !important;
+}
+i {
+    padding: 10px;
+}
+.bouton-poubelle {
+    background-image: url("./img/poubelle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+thead {
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+tr, td, th {
+    border: 1px solid rgba(0, 0, 0, 0.11) !important;
+}

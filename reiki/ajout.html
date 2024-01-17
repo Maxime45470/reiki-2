@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Application Electron</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container mt-2">
+    <div class="row mb-4">
+      <h1 class="text-center">Ajouter des Données</h1>
+      <div class="d-flex justify-content-center">
+        <form id="dataForm">
+            <div class="col-12">
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input1">Date de la séance</label>
+              <input type="date" id="input1" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input2">Nombre de noeuds à dissoudre</label>
+              <input type="text" id="input2" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input3">Nombre de noeuds que je peux défaire aujourd'hui</label>
+              <input type="int" id="input3" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input4">Corps où se situent le(s) noeud(s)</label>
+              <input type="text" id="input4" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input5">Enveloppe du corps X où se trouve le(s) noeud(s) de memoire</label>
+              <input type="text" id="input5" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input6">À quelle période de ma vie</label>
+              <input type="text" id="input6" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input7">Quel est le chacra le plus touché</label>
+              <input type="text" id="input7" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input8">Impact de ce noeud pour moi</label>
+              <input type="text" id="input8" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input9">Taux de perturbation si je dissous le noeud aujourd'hui</label>
+              <input type="text" id="input9" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input10">Rune pour dissoudre le noeud</label>
+              <input type="text" id="input10" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input11">Lettre de la Kabbale pour dissoudre le noeud</label>
+              <input type="text" id="input11" required>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <label for="input12">Elixir de Bach pour dissoudre le noeud</label>
+              <input type="text" id="input12" required>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-3">
+            <button class="btn btn-success" type="submit">Ajouter</button>
+          </div>
+          </form>
+        <!-- Inclure renderer.js -->
+        <script src="comRenderer.js"></script>
+        <script src="addRenderer.js"></script>
+        
+      </div>
+    </div>
+    <button class="btn btn-info" id="goToMainPage">Retour au Tableau</button>
+  </div>
+</body>
+
+</html>

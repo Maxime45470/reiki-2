@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    background-image: url("./img/reiki.webp");
+    background-image: url("../img/reiki.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@ i {
     padding: 10px;
 }
 .bouton-poubelle {
-    background-image: url("./img/poubelle.png");
+    background-image: url("../img/poubelle.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

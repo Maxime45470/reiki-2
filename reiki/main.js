@@ -1,6 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('node:path')
-const database = require('./database.js');
+const database = require('./js/database.js');
 const sqlite3 = require('sqlite3').verbose();
 
 // Chemin vers votre fichier de base de données SQLite
@@ -78,7 +78,7 @@ function createWindow() {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('./views/index.html')
   mainWindow.webContents.on('did-finish-load', () => {
     database.lireDonnees(db, (rows) => {
       mainWindow.webContents.send('reponse-sqlite', rows);

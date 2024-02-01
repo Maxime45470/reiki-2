@@ -1,4 +1,4 @@
-const db = require('./main.js');
+const db = require('../main.js');
 
 // Insérer des données
 function insererDonnees(db, data) {

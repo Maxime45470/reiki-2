@@ -23,7 +23,7 @@ document.getElementById('dataForm').addEventListener('submit', (event) => {
 
     // Envoi des données au processus principal
     ipcRenderer.send('requete-sqlite', data);
-    window.location.href = 'index.html';
+    window.location.href = '../views/index.html';
 });
 
 

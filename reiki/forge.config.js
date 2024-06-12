@@ -12,6 +12,13 @@ module.exports = {
       },
     },
     {
+      name: "@electron-forge/maker-dmg",
+      config: {
+        name: "Reiki",
+        icon: './img/reiki.ico',
+      }
+    },
+    {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
       config: {
